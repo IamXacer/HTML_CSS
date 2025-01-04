@@ -18,8 +18,6 @@ const App = () => {
             <Container>
                 <Main/>
              <Icon/>
-
-
             </Container>
         </div>
     );
