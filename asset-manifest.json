@@ -1,15 +1,23 @@
 {
   "files": {
-    "main.css": "/HTML_CSS/static/css/main.e6c13ad2.css",
-    "main.js": "/HTML_CSS/static/js/main.22e53d9a.js",
+    "main.css": "/HTML_CSS/static/css/main.ce6c1a35.css",
+    "main.js": "/HTML_CSS/static/js/main.4749945f.js",
     "static/js/787.25eaef86.chunk.js": "/HTML_CSS/static/js/787.25eaef86.chunk.js",
+    "static/media/image.jpg": "/HTML_CSS/static/media/image.511b47ecef4acef0caab.jpg",
+    "static/media/logos_react.svg": "/HTML_CSS/static/media/logos_react.5ef585638f5e5a7d5273ba0c6c855d3b.svg",
+    "static/media/logos_bootstrap.svg": "/HTML_CSS/static/media/logos_bootstrap.13b73182dfef87c92832eacad5cd3880.svg",
+    "static/media/icons8-веб-буря.svg": "/HTML_CSS/static/media/icons8-веб-буря.602fdb2b8fb370441308f782e350a5b2.svg",
+    "static/media/logos_git-icon.svg": "/HTML_CSS/static/media/logos_git-icon.aec66c8f516890e9dce4bd625c2d7d5f.svg",
+    "static/media/akar-icons_github-fill.svg": "/HTML_CSS/static/media/akar-icons_github-fill.36dc0fbc093986dc6624f3ad8a37ab2a.svg",
+    "static/media/vscode-icons_file-type-css.svg": "/HTML_CSS/static/media/vscode-icons_file-type-css.348adf5abf24d3e794fcc3416017657e.svg",
+    "static/media/vscode-icons_file-type-html.svg": "/HTML_CSS/static/media/vscode-icons_file-type-html.deb432982af51b0a7f67da2882ff4c68.svg",
     "index.html": "/HTML_CSS/index.html",
-    "main.e6c13ad2.css.map": "/HTML_CSS/static/css/main.e6c13ad2.css.map",
-    "main.22e53d9a.js.map": "/HTML_CSS/static/js/main.22e53d9a.js.map",
+    "main.ce6c1a35.css.map": "/HTML_CSS/static/css/main.ce6c1a35.css.map",
+    "main.4749945f.js.map": "/HTML_CSS/static/js/main.4749945f.js.map",
     "787.25eaef86.chunk.js.map": "/HTML_CSS/static/js/787.25eaef86.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6c13ad2.css",
-    "static/js/main.22e53d9a.js"
+    "static/css/main.ce6c1a35.css",
+    "static/js/main.4749945f.js"
   ]
 }
