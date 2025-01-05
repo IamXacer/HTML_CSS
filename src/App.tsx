@@ -15,13 +15,10 @@ const Container = styled.div`
 const App = () => {
     return (
         <div>
-
             <Container>
                 <Header/>
                 <Main/>
              <Icon/>
-
-
             </Container>
         </div>
     );
