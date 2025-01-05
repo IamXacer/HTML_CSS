@@ -14,12 +14,9 @@ const Container = styled.div`
 const App = () => {
     return (
         <div>
-
             <Container>
                 <Main/>
              <Icon/>
-
-
             </Container>
         </div>
     );
