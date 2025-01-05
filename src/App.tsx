@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import {Icon} from "./components/icon/Icon";
 import {Main} from "./layout/sections/main/Main";
+import {Header} from "./layout/header/Header";
 
 const Container = styled.div`
     display: flex;
@@ -14,9 +15,13 @@ const Container = styled.div`
 const App = () => {
     return (
         <div>
+
             <Container>
+                <Header/>
                 <Main/>
              <Icon/>
+
+
             </Container>
         </div>
     );
