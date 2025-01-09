@@ -1,25 +1,42 @@
 import React from 'react';
 import './Icon.css';
-import iconJs from "../../icons/file-type-js-official.png";
-import LogoGit from "../../icons/logos_git-icon.svg";
-import GitHub from "../../icons/akar-icons_github-fill.svg";
-import Booststrap from "../../icons/logos_bootstrap.svg";
-import ReactIcon from "../../icons/logos_react.svg";
-import HTML from "../../icons/vscode-icons_file-type-html.svg";
-import CSS from "../../icons/vscode-icons_file-type-css.svg";
-import WebStorm from "../../icons/icons8-веб-буря.svg";
+import IconSprite from './sprite.svg';
+import styled from 'styled-components';
 
-export const Icon = () => {
+type IconsPropsType = {
+    Iconid:string
+}
+const IconWrapper = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px; /* Размер контейнера */
+    height: 100px;
+    background-color: #f0f4ff; /* Цвет фона */
+    border-radius: 20px; /* Скругление углов */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Тень */
+    margin: 10px; /* Расстояние между иконками */
+`;
+
+export const ContactIcon = (props: IconsPropsType) => {
     return (
-        <div className="icon-grid">
-            <img src={HTML} alt="HTML Icon" />
-            <img src={CSS} alt="CSS Icon" />
-            <img src={iconJs} alt="JavaScript Icon" />
-            <img src={ReactIcon} alt="React Icon" />
-            <img src={Booststrap} alt="Bootstrap Icon" />
-            <img src={LogoGit} alt="Git Icon" />
-            <img src={GitHub} alt="GitHub Icon" />
-            <img src={WebStorm} alt="GitHub Icon" />
-        </div>
+        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xlinkHref={`${IconSprite}#${props.Iconid}`} />
+        </svg>
+    );
+};
+
+export const SkillIcon = (props: IconsPropsType) => {
+    return (
+        <svg width="96" height="96" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xlinkHref={`${IconSprite}#${props.Iconid}`}/>
+        </svg>
+    );
+};
+export const SkillIconWrapper = (props: IconsPropsType) => {
+    return (
+        <IconWrapper>
+            <SkillIcon Iconid={props.Iconid} />
+        </IconWrapper>
     );
 };
