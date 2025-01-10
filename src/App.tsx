@@ -10,11 +10,11 @@
         align-items: center;
     `;
     const IconContainer = styled.div`
-    display: flex;
-    flex-direction: row; /* Горизонтальное расположение */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     justify-content: center; /* Выравнивание по горизонтали */
     align-items: center; /* Выравнивание по вертикали */
-    gap: 10px; /* Расстояние между иконками */
+    gap: 75px; /* Расстояние между иконками */
     margin-top: 20px;
 `;
 
@@ -26,11 +26,24 @@
                     <Main/>
                     <IconContainer>
                         <SkillIconWrapper Iconid={'HTML'}/>
-                            <SkillIconWrapper Iconid={'bootstrap'}/>
-                            <SkillIconWrapper Iconid={'CSS'}/>
+                                               <SkillIconWrapper Iconid={'bootstrap'}/>
+                        <SkillIconWrapper Iconid={'Git'}/>
+                        <SkillIconWrapper Iconid={'Storyyy'}/>
+                        <SkillIconWrapper Iconid={'PosT'}/>
+                        <SkillIconWrapper Iconid={'Formik'}/>
+                        <SkillIconWrapper Iconid={'custom-sprite'}/>
+                        <SkillIconWrapper Iconid={'material-ui-sprite'}/>
+                        <SkillIconWrapper Iconid={'Styled Components'}/>
+                        <SkillIconWrapper Iconid={'axios-sprite'}/>
+
+                        <SkillIconWrapper Iconid={'CSS'}/>
                             <SkillIconWrapper Iconid={'JS'}/>
                             <SkillIconWrapper Iconid={'React'}/>
                             <SkillIconWrapper Iconid={'Redux'}/>
+                            <SkillIconWrapper Iconid={'typescript'}/>
+
+
+
                     </IconContainer>
                     <ContactIcon Iconid={'What'}/>
                     <ContactIcon Iconid={'1'}/>
