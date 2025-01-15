@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import { Link as ScrollLink } from 'react-scroll';
 
 export const Menu = () => {
     return (
@@ -7,31 +8,33 @@ export const Menu = () => {
             <nav>
                 <ul>
                     <li>
-                        <a href="">Home</a>
+                        <ScrollLink to="main" smooth={true} duration={500}>
+                            Home
+                        </ScrollLink>
                     </li>
                     <li>
-                        <a href="">Skills</a>
+                        <ScrollLink to="skills" smooth={true} duration={500}>
+                            Skills
+                        </ScrollLink>
                     </li>
                     <li>
-                        <a href="">Works</a>
-                    </li>
-                    <li>
-                        <a href="">Testimony</a>
-                    </li>
-                    <li>
-                        <a href="">Contact</a>
+                        <ScrollLink to="contact" smooth={true} duration={500}>
+                            Contact
+                        </ScrollLink>
                     </li>
                 </ul>
             </nav>
-
         </StyledMenu>
-
     );
 };
 
 const StyledMenu = styled.nav`
-ul{
-    display: flex;
-    gap: 30px;
-}
-`
+    ul {
+        display: flex;
+        gap: 30px;
+        list-style: none;
+    }
+    li {
+        padding-inline: 50px;
+    }
+`;
