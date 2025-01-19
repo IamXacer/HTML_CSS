@@ -71,9 +71,21 @@
     const ContactIconWraper = styled.div`
         display: flex;
         align-items: center;
+        justify-content: center;
         margin: 40px;
         gap: 20px;
+
+        @media (max-width: 768px) {
+            flex-wrap: wrap; /* Разрешаем перенос */
+            gap: 15px;
+        }
+
+        @media (max-width: 480px) {
+            flex-direction: column; /* Располагаем иконки в столбик */
+            margin: 20px;
+        }
     `;
+
 
     const IconWrapper = styled.div`
         font-size: 1.8rem;
@@ -88,10 +100,14 @@
 
     const InfoWrapper = styled.div`
         flex: 1;
-        min-width: 350px;
+        min-width: 300px;
         display: flex;
         flex-direction: column;
         gap: 25px;
+
+        @media (max-width: 480px) {
+            min-width: 100%;
+        }
     `;
 
 
@@ -109,7 +125,7 @@
     `;
     const ContentWrapper = styled.div`
         display: flex;
-        align-items: center; /* Центрирование элементов по вертикали */
+        align-items: center;
         gap: 40px;
         justify-content: center;
         background: #ffffff;
@@ -118,14 +134,30 @@
         border-radius: 15px;
         max-width: 1200px;
         width: 100%;
+
+        @media (max-width: 768px) {
+            flex-direction: column; /* Переводим элементы в столбик */
+            padding: 30px;
+            gap: 20px;
+        }
+
+        @media (max-width: 480px) {
+            padding: 20px;
+            gap: 15px;
+        }
     `;
+
 
     const FormWrapper = styled.div`
         flex: 1;
-        min-width: 350px;
+        min-width: 300px; /* Уменьшаем минимальную ширину */
         display: flex;
         flex-direction: column;
-        justify-content: center; /* Центрирует форму внутри контейнера */
+        justify-content: center;
+
+        @media (max-width: 480px) {
+            min-width: 100%; /* Занимаем всю ширину */
+        }
     `;
     const StyledForm = styled.form`
         max-width: 500px;
@@ -149,6 +181,11 @@
             background: #ffffff;
             box-shadow: 0 0 10px rgba(0, 115, 230, 0.3);
         }
+
+        @media (max-width: 480px) {
+            font-size: 0.9rem; /* Уменьшаем размер текста */
+            padding: 12px 15px; /* Уменьшаем отступы */
+        }
     `;
     const FormTitle = styled.h4`
     font-size: 1.8rem;
@@ -171,6 +208,11 @@
             background: #005bb5;
             transform: translateY(-2px);
         }
+
+        @media (max-width: 480px) {
+            font-size: 1rem; /* Уменьшаем размер текста */
+            padding: 12px 15px; /* Уменьшаем отступы */
+        }
     `;
 
     const SectionTitle = styled.h3`
@@ -180,6 +222,7 @@
         margin-bottom: 30px;
         text-align: center;
         position: relative;
+
         &:after {
             content: '';
             display: block;
@@ -187,6 +230,14 @@
             height: 3px;
             background: #0073e6;
             margin: 10px auto 0;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 2rem;
+        }
+
+        @media (max-width: 480px) {
+            font-size: 1.8rem;
         }
     `;
 
