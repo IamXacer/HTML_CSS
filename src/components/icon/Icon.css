@@ -1,0 +1,14 @@
+.icon-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 иконки в строке */
+    gap: 30px 140px;  /* Отступы между иконками */
+    justify-items: center; /* Центрирует иконки по горизонтали */
+    align-items: center; /* Центрирует иконки по вертикали */
+    margin: 40px auto; /* Отступы для всей сетки */
+    max-width: 800px; /* Ограничивает ширину сетки */
+}
+
+.icon-grid img {
+    width: 96px; /* Задает размер каждой иконки */
+    height: 96px;
+}
